@@ -1,0 +1,20 @@
+void explainStack() {
+    stack<int> st;
+    st.push(1);     //{1}
+    st.push(2);     //{2,1}
+    st.push(3);     //{3,2,1}
+    st.push(3);     //{3,3,2,1}
+    st.emplace(5);  //{5,3,3,2,1}
+
+    cout << st.top();   //prints 5  "** st[2] is invalid **" || we can't access stack like array.
+
+    st.pop();   //{3,3,2,1}
+    cout << st.top();   //prints 3
+    cout << st.size();  //prints 4
+    cout << st.empty(); //returns true or false depending on the stack is empty or not
+
+    stack<int>st1, st2;
+    st1.swap(st2);
+
+    push, pop, top -> O(1)  //time complexity
+}

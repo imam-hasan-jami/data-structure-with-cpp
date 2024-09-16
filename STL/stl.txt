@@ -1,0 +1,7 @@
+#include<bits/stdc++.h>     //Includes the standard C++ library headers. <bits/stdc++.h> header is a convenience header that includes most of the standard C++ library headers.
+
+
+#include<math.h>    //Includes the math library for performing mathematical operations. The math.h header provides a set of functions to perform mathematical operations such as trigonometric, logarithmic, and other common mathematical functions.
+
+
+#include<string.h>      //Provides functions for handling C-style strings.

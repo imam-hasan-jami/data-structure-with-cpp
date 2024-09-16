@@ -1,0 +1,40 @@
+//Sorted and Unique [will be sorted and no duplicate values will be stored]
+
+//in Set everything takes logarithmic time complexity.
+
+void explainSet() {
+    set<int> st;
+    st.insert(1);   //{1}
+    st.insert(2);   //{1,2}
+    st.insert(2);   //{1,2}
+    st.insert(4);   //{1,2,4}
+    st.insert(3);   //{1,2,3,4}
+
+    //functionality of insert in vector can be used also, that only increases efficiency
+
+    //begin(), end(), rbegin(), rend(), size(), empty() and swap() are same as those of the above
+
+    //{1,2,3,4,5}
+    auto it = st.find(3);   //iterator. this will point to the index or memory location where 3 is stored.
+    //{1,2,3,4,5}
+    auto it = st.find(6);   //if the value is not stored in the set, the iterator will point afterward to the end of the set. || st.end() ^
+
+    //{1,4,5}
+    st.erase(5);    //5 will be erased. {1,4}   || takes logarithmic time
+
+    int cnt = st.count(1);  //if the value is available in the set, it will return 1 otherwise it will return 0
+
+    auto it = st.find(3);
+    st.erase(it);       //it takes constant time
+
+    //{1,2,3,4,5}
+    auto it1 = st.find(2);
+    auto it2 = st.find(4);
+    st.erase(it1, it2);     //{1,4,5}   [first, last)
+
+    //lower_bound() and upper_bound() function works in the same way as in vector it does.
+
+    //this is the syntax
+    auto it = st.lower_bound(2);
+    auto it = st.upper_bound(3);
+}
