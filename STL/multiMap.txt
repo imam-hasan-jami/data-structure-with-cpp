@@ -1,0 +1,6 @@
+//same as set but it can store multiple keys (duplicate)
+
+void explainMultiMap() {
+    //everything same as map
+    //only mpp[key] cannot be used here
+}

@@ -1,0 +1,5 @@
+void explainUnorderedMap() {
+    //same as set but it will not store values in sorted order. values will be stored as random.
+
+    //most of the cases -> O(1)
+}

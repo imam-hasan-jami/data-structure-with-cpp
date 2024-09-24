@@ -1,0 +1,6 @@
+// same as set but not sorted
+void explainUnorderedSet() {
+    //lower_bound and upper_bound function does not works, rest all functions are same
+    //most of the cases has time complexity of O(1)
+    //worst case O(n) which doesn't occur normally. once in a blue-moon.
+}
